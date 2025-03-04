@@ -1,6 +1,6 @@
 {
   "name": "@shinlms404/prettier-config",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "My Prettier config preset",
   "keywords": [
     "typescript",
@@ -34,7 +34,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepack": "npm run build",
-    "prepare": "simple-git-hooks",
+    "prepare": "npx simple-git-hooks",
     "release": "bumpp && npm publish",
     "stub": "tsup --format esm",
     "test": "vitest",
@@ -42,7 +42,7 @@
     "watch": "tsup --format esm,cjs --watch"
   },
   "simple-git-hooks": {
-    "pre-commit": "npm lint-staged"
+    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"
@@ -68,7 +68,6 @@
     "eslint": "^8.57.1",
     "prettier": "^3.5.3"
   },
-  "packageManager": "pnpm@8.14.1",
   "publishConfig": {
     "access": "public"
   }
