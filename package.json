@@ -48,7 +48,7 @@
     "*": "eslint --fix"
   },
   "dependencies": {
-    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-organize-imports": "^4.1.0",
     "prettier-plugin-packagejson": "^2.5.10"
   },
   "devDependencies": {
